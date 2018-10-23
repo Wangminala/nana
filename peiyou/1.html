@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开心</title>
+</head>
+<script>
+     var a='33s33';
+     console.log(parseInt(a));
+     console.log(Number(a));
+     // 实参集合 arguments
+      console.log(arguments);
+     function sum(a,b,c)
+     {
+        var total =0;
+        for(var i=0;i<arguments.length;i++)
+        {
+             console.log(arguments[i]);
+             total+=arguments[i];
+        }
+       return total;
+     }
+     var q = sum(1,2,3,4,5);
+    console.log(q);
+
+
+
+</script>
+<body>
+	
+</body>
+</html>

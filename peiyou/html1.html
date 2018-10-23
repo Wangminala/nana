@@ -1,0 +1,66 @@
+<script>
+var ary=[1,2,3,4];
+var obj={name:'zf' , age:9}
+obj.name;
+var a = 'name'
+//对象的循环用for var in   x
+//for(var k in obj){
+    //console.log(k);
+//}
+
+//function fn(){
+   // return;//return两个作用一个返回数值，另一个时打断
+
+    //return 12；
+    //return 15；返回12后，就不执行return 15了
+//}
+//var f=fn();
+向ary数组的末尾添加一项
+var ary=[1,2,3,4];
+var n=ary.push('j',2,2);//最后n返回的是改变后的新数组的长度
+console.log(ary);
+
+var item=ary.pop()
+console.log(item);
+只能删除数组的最后一项，item返回值为删除项的内容
+
+
+var n = ary.unshift(999，1000);
+给数组的首项添加一项或多项，n的返回值是改变后的数组的长度
+
+ary=[233,90,39,38,48];
+var ary3=ary.sort(function(a,b){
+    return a-b;
+    a-b升序b-a降序
+
+})//sort的返回结果是排好序后的数组
+
+console.log(ary3===ary)
+ary.reverse();
+reverse倒序输出，并且和原数组是同一路径
+返回false因为路径不同
+ary=[233,90,39,38,48];
+//不兼容iE8
+
+	
+	
+	
+	
+	//ary.forEach(function(item,index){
+    //index是循环的每一项的索引，item是循环数组的每一项
+
+})；
+
+var ary2=ary.filter(function(item,index){//false是放进去了
+   //return true;//返回的是空数组
+   //return false;//返回的是空数组
+   return item > 20 ;
+
+})
+
+
+var qqq = 123;//可以多次var，也可window打点出来eg：window.qqq
+let aaa=  123;//只能一次声明一次(var申明后也不能用let)，但可以赋值
+const bb=123;//不能重复声明，也不能重新赋值
+
+</script>
